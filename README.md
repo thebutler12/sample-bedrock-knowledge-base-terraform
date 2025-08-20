@@ -50,14 +50,14 @@ AWS CloudShell: If using AWS's browser-based CLI.
 
 Open a terminal window. Assuming you are in the root directory, run the following command to clone the repository: 
  ```{bash}
-git clone git@ssh.gitlab.aws.dev:genaiic-reusable-assets/demo-artifacts/bedrock-kb-with-terraform.git
+git clone https://github.com/aws-samples/sample-bedrock- knowledge-base-terraform
 
 ```
 
 Navigate to the Project Directory Move into the cloned directory:
 
  ```{bash}
-cd bedrock-kb-with-terraform 
+cd sample-bedrock-knowledge-base-terraform
 
 ```
 
