@@ -1,11 +1,11 @@
 provider "aws" {
-  region = "us-east-1" # Update this to your desired AWS region
+  region = "eu-west-1" # Update this to your desired AWS region
 }
 
 module "knowledge_base" {
   source = "./modules"
   # Define required variables for the module
-  kb_s3_bucket_name_prefix = "your-s3-bucket-name" # Replace this with name of existing S3 bucket to use as knowledge base data source
+  kb_s3_bucket_name_prefix = "sample-bucket-sbs-bedrock-kb" # Replace this with name of existing S3 bucket to use as knowledge base data source
   
   # (Optional) Additional settings for variables defined in modules/variables.tf can be added here
   chunking_strategy        = "DEFAULT"      # Supports FIXED_SIZE, HIERARCHICAL, SEMANTIC, or NONE. By default, with DEFAULT chunking, it automatically splits the text into chunks of approximately 300 tokens.
